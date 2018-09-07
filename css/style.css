@@ -1,0 +1,217 @@
+body, html {
+    height: calc(100% - 2em);
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+body {
+    background: rgba(191,0,146,1);
+    background: -moz-linear-gradient(45deg, rgba(191,0,146,1) 0%, rgba(32,0,191,1) 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(191,0,146,1)), color-stop(100%, rgba(32,0,191,1)));
+    background: -webkit-linear-gradient(45deg, rgba(191,0,146,1) 0%, rgba(32,0,191,1) 100%);
+    background: -o-linear-gradient(45deg, rgba(191,0,146,1) 0%, rgba(32,0,191,1) 100%);
+    background: -ms-linear-gradient(45deg, rgba(191,0,146,1) 0%, rgba(32,0,191,1) 100%);
+    background: linear-gradient(45deg, rgba(191,0,146,1) 0%, rgba(32,0,191,1) 100%);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bf0092', endColorstr='#2000bf', GradientType=1 );
+}
+section {
+    display: none;
+}
+aside {
+    color: #fff;
+    display: grid;
+    grid-template-columns: auto 40px;
+    padding: 2em;
+}
+
+img {
+    width: 40px;
+    cursor: pointer;
+}
+figure {
+    margin: 0;
+}
+
+figcaption {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+nav {
+    background: #fff;
+}
+
+.active {
+    position: absolute;
+    display: block;
+    background: #fff;
+    width: 50%;
+    left: 0;
+    top: 0;
+    height: 100%;
+}
+
+nav ul {
+    display: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: .8em; 
+    display: block;
+    padding: 1.5em 3em;
+    background-color:rgba(255, 255, 255, .35);
+    color: black;
+}
+
+main {
+    background: #fff;
+    padding: 4em 3em;
+}
+
+h1 {
+    margin: 0;
+}
+
+p {
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+.cta {
+    display: block;
+    color:#fff;
+    background: #0e7FFF;
+    text-decoration: none;
+    padding: 8px 50px;
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 4px;
+    margin: 2em 0;
+    border-bottom: 2px solid #160eff;
+    transition: margin-top 100ms ease-in;
+}
+
+.cta:hover {
+ border: none;
+ margin-top: calc(2em + 2px);
+ transition: margin-top 100ms ease-in;
+ transition: border-bottom 400ms ease-in;
+}
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+} 
+footer ul {
+    margin-top: 40px;
+}
+footer ul li {
+    padding: 10px;
+    font-size: 1.5em;
+    display: inline;
+}
+footer ul li a {
+    text-decoration: none;
+}
+footer ul li a:hover {
+    color: #fefefe;
+}
+@media only screen and (min-width: 768px) {
+    body {
+        display: grid;
+        grid-template-columns: 25% auto;
+        padding: 2em;
+    }
+
+    section {
+        display: inline-block;
+        display: flex;
+        align-items: left;
+        justify-content: flex-end;
+    }
+
+    section ul li {
+        margin-top: 0px;
+        padding: 10px;
+        font-size: 1.4em;
+        display: inline;
+    }
+
+    section ul li a {
+        color: #8700A2;
+    }
+
+    img {
+        display: none;
+    }
+
+    aside {
+        display: grid;
+        background: #DCE1F6;
+        grid-template-columns: auto;
+        grid-template-rows: 30% auto;
+        padding: 0px;
+    }
+    
+    main {
+        padding: 4em;
+        background: #fff url('../images/bg.svg') no-repeat bottom right;
+        background-size: 70%;
+    }
+
+    #avatar {
+        border-radius: 50%;
+        background: white;
+        width: 60px;
+        height: 60px;
+        margin: 4em auto 1em auto;
+    }
+    figcaption {
+        text-align: center;
+        color: #000;
+    }
+
+    nav ul {
+        display: inline-block;
+        margin-top: 2em;
+        position: relative !important;
+        background: none !important;
+        width: 100% !important;
+        padding: 0;
+    }
+    nav ul li:hover {
+        background-color: #fff;
+    }
+    nav {
+        background: none;
+        width: 100%;
+    }
+
+    .cta {
+        display: inline-block;
+        font-size: 1.3em;
+        padding: .8em 3em;
+    }
+
+    h1 {
+        font-size: 3em;
+        margin-top: 2em;
+    }
+
+    p {
+        font-size: 1.2em;
+    }
+
+    footer {
+        display: none;
+    }
+}
